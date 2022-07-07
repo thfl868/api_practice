@@ -1,5 +1,6 @@
 package com.spring.practice.api.controller.v1;
 
+
 import com.spring.practice.api.entity.User;
 import com.spring.practice.api.model.response.CommonResult;
 import com.spring.practice.api.model.response.ListResult;
@@ -69,3 +70,4 @@ public class UserController {
         return responseService.getSuccessResult();
     }
 }
+
