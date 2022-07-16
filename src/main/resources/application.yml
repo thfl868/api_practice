@@ -4,11 +4,13 @@ spring:
     url: jdbc:h2:tcp://localhost/~/test;MODE=LEGACY
     driver-class-name: org.h2.Driver
     username: sa
-
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
     properties.hibernate.hbm2ddl.auto: update
     show-sql: true
+  messages:
+    basename: i18n/exception
+    encoding: UTF-8
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
