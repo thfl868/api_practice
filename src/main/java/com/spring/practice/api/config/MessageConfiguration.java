@@ -40,8 +40,8 @@ public class MessageConfiguration implements WebMvcConfigurer {
 
     @Bean // yml 파일을 참조하는 MessageSource 선언
     public MessageSource messageSource(
-          @Value("${spring.message.basename}") String basename,
-          @Value("${spring.message.encoding}") String encoding
+          @Value("${spring.messages.basename}") String basename,
+          @Value("${spring.messages.encoding}") String encoding
     ) {
         YamlMessageSource ms = new YamlMessageSource();
         ms.setBasename(basename);
